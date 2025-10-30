@@ -47,7 +47,7 @@ fun FormDataDiri(modifier: Modifier) {
         verticalArrangement = Arrangement.Top,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        OutlinedTextField(
+        OutlinedTextField( //mengubah nama commit yg benar
             value = textNama,
             singleLine = true,
             shape = MaterialTheme.shapes.large,
