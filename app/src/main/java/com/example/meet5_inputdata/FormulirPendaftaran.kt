@@ -36,4 +36,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun FormulirPendaftaran(modifier: Modifier = Modifier)
+fun FormulirPendaftaran(modifier: Modifier = Modifier) {
+    // variabel-variabel untuk mengingat nilai masukan dari keyboard
+    var textNama by remember { mutableStateOf(value = "") }
+    var textJK by remember { mutableStateOf(value = "") }
+    var textStatus by remember { mutableStateOf(value = "") }
+    var textAlamat by remember { mutableStateOf(value = "") }
