@@ -59,3 +59,11 @@ fun FormulirPendaftaran(modifier: Modifier = Modifier) {
         stringResource(id = R.string.lajang),
         stringResource(id = R.string.duda)
     )
+
+    // Purple gradient background
+    val gradientBrush = Brush.verticalGradient(
+        colors = listOf(
+            Color(0xFF9C27B0),
+            Color(0xFF7C4DFF)
+        )
+    )
