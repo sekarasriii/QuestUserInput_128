@@ -212,3 +212,20 @@ fun FormulirPendaftaran(modifier: Modifier = Modifier) {
                         modifier = Modifier
                             .fillMaxWidth()
                             .padding(top = 16.dp, bottom = 8.dp)
+                    )
+
+                    // Input Alamat
+                    OutlinedTextField(
+                        value = textAlamat,
+                        singleLine = true,
+                        shape = MaterialTheme.shapes.medium,
+                        modifier = Modifier.fillMaxWidth(),
+                        placeholder = { Text(text = stringResource(id = R.string.placeholder_alamat)) },
+                        onValueChange = { textAlamat = it },
+                        colors = OutlinedTextFieldDefaults.colors(
+                            focusedBorderColor = Color(0xFF6200EA),
+                            unfocusedBorderColor = Color(0xFFB47CFF),
+                            focusedContainerColor = Color.White,
+                            unfocusedContainerColor = Color.White
+                        )
+                    )
