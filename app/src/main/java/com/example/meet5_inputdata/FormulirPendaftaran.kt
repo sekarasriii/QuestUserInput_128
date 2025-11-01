@@ -67,3 +67,9 @@ fun FormulirPendaftaran(modifier: Modifier = Modifier) {
             Color(0xFF7C4DFF)
         )
     )
+
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(brush = gradientBrush)
+    )
