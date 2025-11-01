@@ -72,4 +72,11 @@ fun FormulirPendaftaran(modifier: Modifier = Modifier) {
         modifier = Modifier
             .fillMaxSize()
             .background(brush = gradientBrush)
-    )
+    ) {
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(horizontal = 24.dp, vertical = 32.dp),
+            verticalArrangement = Arrangement.Top,
+            horizontalAlignment = Alignment.CenterHorizontally
+        )
