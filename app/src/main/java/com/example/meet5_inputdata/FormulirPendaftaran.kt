@@ -101,3 +101,15 @@ fun FormulirPendaftaran(modifier: Modifier = Modifier) {
                     modifier = Modifier.padding(20.dp),
                     horizontalAlignment = Alignment.CenterHorizontally
                 )
+
+                {
+                    // Label Nama Lengkap
+                    Text(
+                        text = stringResource(id = R.string.nama_lengkap).uppercase(),
+                        style = MaterialTheme.typography.labelLarge,
+                        color = Color(0xFF49454F),
+                        fontWeight = FontWeight.SemiBold,
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(bottom = 8.dp)
+                    )
