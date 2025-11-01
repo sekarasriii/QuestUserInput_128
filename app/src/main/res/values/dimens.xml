@@ -3,4 +3,27 @@
     <dimen name="padding_small">10dp</dimen>
     <dimen name="padding_medium">30dp</dimen>
     <dimen name="divider_tipis">1dp</dimen>
+
+    <!-- Padding -->
+    <dimen name="padding2_small">8dp</dimen>
+    <dimen name="padding2_medium">16dp</dimen>
+    <dimen name="padding2_large">24dp</dimen>
+
+    <!-- Divider -->
+    <dimen name="divider2_tipis">1dp</dimen>
+    <dimen name="divider2_sedang">2dp</dimen>
+
+    <!-- Component Sizes -->
+    <dimen name="textfield_width">250dp</dimen>
+    <dimen name="card_width">300dp</dimen>
+    <dimen name="card_height">120dp</dimen>
+    <dimen name="button_height">48dp</dimen>
+
+    <!-- Spacing -->
+    <dimen name="spacing_small">4dp</dimen>
+    <dimen name="spacing_medium">8dp</dimen>
+    <dimen name="spacing_large">16dp</dimen>
+
+    <!-- Elevation -->
+    <dimen name="card_elevation">10dp</dimen>
 </resources>
