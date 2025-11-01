@@ -203,3 +203,12 @@ fun FormulirPendaftaran(modifier: Modifier = Modifier) {
                             }
                         }
                     }
+                    // Label Alamat
+                    Text(
+                        text = stringResource(id = R.string.alamat).uppercase(),
+                        style = MaterialTheme.typography.labelLarge,
+                        color = Color(0xFF49454F),
+                        fontWeight = FontWeight.SemiBold,
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(top = 16.dp, bottom = 8.dp)
