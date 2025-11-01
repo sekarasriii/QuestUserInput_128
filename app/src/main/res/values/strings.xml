@@ -2,6 +2,7 @@
     <string name="app_name">Input Pengguna</string>
     <string name="submit">Submit</string>
 
+ <!-- string baru untuk formulir pendaftaran -->
     <string name="Formulir">Formulir Pendaftaran</string>
     <string name="nama_lengkap">Nama Lengkap</string>
     <string name="placeholder_nama">Isian nama lengkap</string>
