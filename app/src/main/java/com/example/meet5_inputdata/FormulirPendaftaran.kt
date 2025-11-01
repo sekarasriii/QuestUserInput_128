@@ -138,3 +138,30 @@ fun FormulirPendaftaran(modifier: Modifier = Modifier) {
                             .fillMaxWidth()
                             .padding(top = 16.dp, bottom = 8.dp)
                     )
+                    // Radio Button Jenis Kelamin
+                    Column(modifier = Modifier.fillMaxWidth()) {
+                        gender.forEach { item ->
+                            Row(
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .selectable(
+                                        selected = textJK == item,
+                                        onClick = { textJK = item }
+                                    ),
+                                verticalAlignment = Alignment.CenterVertically
+                            ) {
+                                RadioButton(
+                                    selected = textJK == item,
+                                    onClick = { textJK = item },
+                                    colors = RadioButtonDefaults.colors(
+                                        selectedColor = Color(0xFF6200EA),
+                                        unselectedColor = Color(0xFF49454F)
+                                    )
+                                )
+                                Text(
+                                    text = item,
+                                    color = Color(0xFF1C1B1F)
+                                )
+                            }
+                        }
+                    }
