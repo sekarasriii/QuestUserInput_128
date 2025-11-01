@@ -176,3 +176,30 @@ fun FormulirPendaftaran(modifier: Modifier = Modifier) {
                             .fillMaxWidth()
                             .padding(top = 16.dp, bottom = 8.dp)
                     )
+                    // Radio Button Status Perkawinan
+                    Column(modifier = Modifier.fillMaxWidth()) {
+                        status.forEach { item ->
+                            Row(
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .selectable(
+                                        selected = textStatus == item,
+                                        onClick = { textStatus = item }
+                                    ),
+                                verticalAlignment = Alignment.CenterVertically
+                            ) {
+                                RadioButton(
+                                    selected = textStatus == item,
+                                    onClick = { textStatus = item },
+                                    colors = RadioButtonDefaults.colors(
+                                        selectedColor = Color(0xFF6200EA),
+                                        unselectedColor = Color(0xFF49454F)
+                                    )
+                                )
+                                Text(
+                                    text = item,
+                                    color = Color(0xFF1C1B1F)
+                                )
+                            }
+                        }
+                    }
