@@ -255,3 +255,51 @@ fun FormulirPendaftaran(modifier: Modifier = Modifier) {
                             fontWeight = FontWeight.SemiBold,
                             modifier = Modifier.padding(vertical = 4.dp)
                         )
+                    }
+                }
+            }
+
+            // Card untuk menampilkan hasil
+            if (nama.isNotEmpty()) {
+                ElevatedCard(
+                    elevation = CardDefaults.cardElevation(
+                        defaultElevation = dimensionResource(id = R.dimen.card_elevation)
+                    ),
+                    colors = CardDefaults.cardColors(
+                        containerColor = colorResource(id = R.color.card_result_background)
+                    ),
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(top = 20.dp)
+                ) {
+                    Column(
+                        modifier = Modifier.padding(
+                            horizontal = dimensionResource(id = R.dimen.padding2_medium),
+                            vertical = dimensionResource(id = R.dimen.padding2_medium)
+                        )
+                    ) {
+                        Text(
+                            text = "Nama: $nama",
+                            color = colorResource(id = R.color.text_white),
+                            modifier = Modifier.padding(bottom = 4.dp)
+                        )
+                        Text(
+                            text = "Jenis Kelamin: $jenisKelamin",
+                            color = colorResource(id = R.color.text_white),
+                            modifier = Modifier.padding(bottom = 4.dp)
+                        )
+                        Text(
+                            text = "Status Perkawinan: $statusPerkawinan",
+                            color = colorResource(id = R.color.text_white),
+                            modifier = Modifier.padding(bottom = 4.dp)
+                        )
+                        Text(
+                            text = "Alamat: $alamat",
+                            color = colorResource(id = R.color.text_white)
+                        )
+                    }
+                }
+            }
+        }
+    }
+}
