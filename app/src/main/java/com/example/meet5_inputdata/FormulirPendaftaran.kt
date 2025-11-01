@@ -128,3 +128,13 @@ fun FormulirPendaftaran(modifier: Modifier = Modifier) {
                             unfocusedContainerColor = Color.White
                         )
                     )
+                    // Label Jenis Kelamin
+                    Text(
+                        text = stringResource(id = R.string.jenis_kelamin),
+                        style = MaterialTheme.typography.labelLarge,
+                        color = Color(0xFF49454F),
+                        fontWeight = FontWeight.SemiBold,
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(top = 16.dp, bottom = 8.dp)
+                    )
