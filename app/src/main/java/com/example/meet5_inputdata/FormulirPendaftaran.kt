@@ -229,3 +229,29 @@ fun FormulirPendaftaran(modifier: Modifier = Modifier) {
                             unfocusedContainerColor = Color.White
                         )
                     )
+
+                    // Tombol Submit
+                    Button(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(top = 20.dp),
+                        enabled = textNama.isNotEmpty() && textJK.isNotEmpty() &&
+                                textStatus.isNotEmpty() && textAlamat.isNotEmpty(),
+                        onClick = {
+                            nama = textNama
+                            jenisKelamin = textJK
+                            statusPerkawinan = textStatus
+                            alamat = textAlamat
+                        },
+                        colors = ButtonDefaults.buttonColors(
+                            containerColor = Color(0xFF6200EA),
+                            disabledContainerColor = Color(0xFF9E9E9E)
+                        ),
+                        shape = MaterialTheme.shapes.large
+                    ) {
+                        Text(
+                            text = stringResource(id = R.string.submit),
+                            fontSize = 16.sp,
+                            fontWeight = FontWeight.SemiBold,
+                            modifier = Modifier.padding(vertical = 4.dp)
+                        )
