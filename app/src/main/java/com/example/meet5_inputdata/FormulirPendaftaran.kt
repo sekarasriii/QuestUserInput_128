@@ -165,3 +165,14 @@ fun FormulirPendaftaran(modifier: Modifier = Modifier) {
                             }
                         }
                     }
+
+                    // Label Status Perkawinan
+                    Text(
+                        text = stringResource(id = R.string.status_perkawinan),
+                        style = MaterialTheme.typography.labelLarge,
+                        color = Color(0xFF49454F),
+                        fontWeight = FontWeight.SemiBold,
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(top = 16.dp, bottom = 8.dp)
+                    )
