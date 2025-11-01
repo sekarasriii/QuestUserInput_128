@@ -53,3 +53,9 @@ fun FormulirPendaftaran(modifier: Modifier = Modifier) {
         stringResource(id = R.string.laki_laki),
         stringResource(id = R.string.perempuan)
     )
+
+    val status: List<String> = listOf(
+        stringResource(id = R.string.janda),
+        stringResource(id = R.string.lajang),
+        stringResource(id = R.string.duda)
+    )
