@@ -42,3 +42,9 @@ fun FormulirPendaftaran(modifier: Modifier = Modifier) {
     var textJK by remember { mutableStateOf(value = "") }
     var textStatus by remember { mutableStateOf(value = "") }
     var textAlamat by remember { mutableStateOf(value = "") }
+
+    // variabel-variabel untuk menyimpan data yang diperoleh dari komponen UI
+    var nama by remember { mutableStateOf(value = "") }
+    var jenisKelamin by remember { mutableStateOf(value = "") }
+    var statusPerkawinan by remember { mutableStateOf(value = "") }
+    var alamat by remember { mutableStateOf(value = "") }
