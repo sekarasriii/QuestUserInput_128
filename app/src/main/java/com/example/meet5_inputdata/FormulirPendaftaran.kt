@@ -80,3 +80,12 @@ fun FormulirPendaftaran(modifier: Modifier = Modifier) {
             verticalArrangement = Arrangement.Top,
             horizontalAlignment = Alignment.CenterHorizontally
         )
+        {
+            // Header Title
+            Text(
+                text = "Formulir Pendaftaran",
+                style = MaterialTheme.typography.headlineMedium,
+                fontWeight = FontWeight.Bold,
+                color = Color.White,
+                modifier = Modifier.padding(bottom = 24.dp)
+            )
