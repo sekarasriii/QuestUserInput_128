@@ -7,4 +7,43 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Primary Colors - Purple/Blue Theme -->
+    <color name="purple_primary">#7C4DFF</color>
+    <color name="purple_primary_dark">#6200EA</color>
+    <color name="purple_light">#B47CFF</color>
+    <color name="purple_lighter">#E1BEE7</color>
+
+    <!-- Secondary Colors -->
+    <color name="blue_accent">#536DFE</color>
+    <color name="blue_light">#8C9EFF</color>
+
+    <!-- Background Colors -->
+    <color name="background_gradient_start">#9C27B0</color>
+    <color name="background_gradient_end">#7C4DFF</color>
+    <color name="background_light">#F3E5F5</color>
+    <color name="card_background">#E8DEF8</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#1C1B1F</color>
+    <color name="text_secondary">#49454F</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_on_purple">#FFFFFF</color>
+
+    <!-- Component Colors -->
+    <color name="divider_color">#616161</color>
+    <color name="card_result_background">#1C1B1F</color>
+
+    <!-- Button Colors -->
+    <color name="button_enabled">#6200EA</color>
+    <color name="button_disabled">#9E9E9E</color>
+
+    <!-- Input Field Colors -->
+    <color name="input_background">#F5F5FF</color>
+    <color name="input_border">#B47CFF</color>
+
+    <!-- Common Colors -->
+    <color name="dark_gray">#424242</color>
+    <color name="gray">#757575</color>
+    <color name="light_gray">#E0E0E0</color>
 </resources>
